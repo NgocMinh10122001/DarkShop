@@ -4,6 +4,7 @@ import "../globals.css";
 import ClerkProviderWrapper from "../(auth)/ClerkProviderWrapper";
 import LeftSideBar from "@/components/layout/LeftSideBar";
 import TopBar from "@/components/layout/TopBar";
+import { ToasterProvider } from "@/lib/ToasterProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
+          <ToasterProvider />
           <div className="flex max-lg:flex-col ">
             <LeftSideBar />
             <TopBar />

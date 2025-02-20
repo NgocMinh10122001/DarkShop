@@ -8,9 +8,7 @@ import React from "react";
 
 const LeftSideBar = () => {
   const pathName = usePathname();
-  console.log("====================================");
-  console.log(pathName);
-  console.log("====================================");
+
   return (
     <div className="h-screen left-0 top-0 sticky p-10 flex flex-col gap-16 bg-black shadow-xl max-lg:hidden">
       <Image src={"/logo.webp"} alt="logo" width={150} height={70} />
